@@ -1,0 +1,1590 @@
+{
+  "schema_version": "2.0",
+  "experiment": "affine_6bit_g128_cross_arch",
+  "asset_id": "TinyLlama-1.1B",
+  "asset_type": "llm_weight",
+  "asset_source": "huggingface:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "codec": "hxq_affine_6",
+  "bpw": 6.25,
+  "method": "per-group affine, g=128, levels=64, 6-bit",
+  "group_size": 128,
+  "n_tensors": 156,
+  "cos_min": 0.9991,
+  "cos_mean": 0.999616,
+  "cos_p5": 0.999556,
+  "n_pass": 156,
+  "n_fail": 0,
+  "gate": "PASS",
+  "gate_threshold": 0.999,
+  "per_tensor": [
+    {
+      "tensor_id": "lm_head.weight",
+      "shape": [
+        32000,
+        2048
+      ],
+      "numel": 65536000,
+      "cos_sim": 0.999481,
+      "time_ms": 803.6
+    },
+    {
+      "tensor_id": "model.embed_tokens.weight",
+      "shape": [
+        32000,
+        2048
+      ],
+      "numel": 65536000,
+      "cos_sim": 0.999425,
+      "time_ms": 793.6
+    },
+    {
+      "tensor_id": "model.layers.0.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999549,
+      "time_ms": 145.2
+    },
+    {
+      "tensor_id": "model.layers.0.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.99955,
+      "time_ms": 140.3
+    },
+    {
+      "tensor_id": "model.layers.0.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999568,
+      "time_ms": 137.3
+    },
+    {
+      "tensor_id": "model.layers.0.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.9991,
+      "time_ms": 5.5
+    },
+    {
+      "tensor_id": "model.layers.0.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999596,
+      "time_ms": 27.1
+    },
+    {
+      "tensor_id": "model.layers.0.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999226,
+      "time_ms": 24.4
+    },
+    {
+      "tensor_id": "model.layers.0.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999684,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.1.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999561,
+      "time_ms": 131.1
+    },
+    {
+      "tensor_id": "model.layers.1.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999573,
+      "time_ms": 130.2
+    },
+    {
+      "tensor_id": "model.layers.1.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.99957,
+      "time_ms": 135.9
+    },
+    {
+      "tensor_id": "model.layers.1.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999548,
+      "time_ms": 4.1
+    },
+    {
+      "tensor_id": "model.layers.1.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999638,
+      "time_ms": 27.8
+    },
+    {
+      "tensor_id": "model.layers.1.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999571,
+      "time_ms": 24.8
+    },
+    {
+      "tensor_id": "model.layers.1.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.99967,
+      "time_ms": 2.6
+    },
+    {
+      "tensor_id": "model.layers.10.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999568,
+      "time_ms": 131.3
+    },
+    {
+      "tensor_id": "model.layers.10.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999583,
+      "time_ms": 135.8
+    },
+    {
+      "tensor_id": "model.layers.10.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999572,
+      "time_ms": 135.2
+    },
+    {
+      "tensor_id": "model.layers.10.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.9997,
+      "time_ms": 4.1
+    },
+    {
+      "tensor_id": "model.layers.10.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999656,
+      "time_ms": 31.2
+    },
+    {
+      "tensor_id": "model.layers.10.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999645,
+      "time_ms": 23.1
+    },
+    {
+      "tensor_id": "model.layers.10.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999699,
+      "time_ms": 2.1
+    },
+    {
+      "tensor_id": "model.layers.11.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999566,
+      "time_ms": 142.3
+    },
+    {
+      "tensor_id": "model.layers.11.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999588,
+      "time_ms": 133.1
+    },
+    {
+      "tensor_id": "model.layers.11.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999571,
+      "time_ms": 134.6
+    },
+    {
+      "tensor_id": "model.layers.11.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.9997,
+      "time_ms": 4.5
+    },
+    {
+      "tensor_id": "model.layers.11.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999649,
+      "time_ms": 26.8
+    },
+    {
+      "tensor_id": "model.layers.11.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999635,
+      "time_ms": 24.2
+    },
+    {
+      "tensor_id": "model.layers.11.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999696,
+      "time_ms": 2.7
+    },
+    {
+      "tensor_id": "model.layers.12.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999562,
+      "time_ms": 134.2
+    },
+    {
+      "tensor_id": "model.layers.12.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999579,
+      "time_ms": 133.8
+    },
+    {
+      "tensor_id": "model.layers.12.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999566,
+      "time_ms": 131.0
+    },
+    {
+      "tensor_id": "model.layers.12.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999696,
+      "time_ms": 4.4
+    },
+    {
+      "tensor_id": "model.layers.12.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999657,
+      "time_ms": 30.3
+    },
+    {
+      "tensor_id": "model.layers.12.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999646,
+      "time_ms": 22.5
+    },
+    {
+      "tensor_id": "model.layers.12.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999699,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.13.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999566,
+      "time_ms": 134.0
+    },
+    {
+      "tensor_id": "model.layers.13.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999584,
+      "time_ms": 130.6
+    },
+    {
+      "tensor_id": "model.layers.13.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999566,
+      "time_ms": 135.9
+    },
+    {
+      "tensor_id": "model.layers.13.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999703,
+      "time_ms": 4.6
+    },
+    {
+      "tensor_id": "model.layers.13.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999652,
+      "time_ms": 32.7
+    },
+    {
+      "tensor_id": "model.layers.13.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999646,
+      "time_ms": 25.2
+    },
+    {
+      "tensor_id": "model.layers.13.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999702,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.14.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999567,
+      "time_ms": 135.0
+    },
+    {
+      "tensor_id": "model.layers.14.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999582,
+      "time_ms": 132.9
+    },
+    {
+      "tensor_id": "model.layers.14.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999569,
+      "time_ms": 136.9
+    },
+    {
+      "tensor_id": "model.layers.14.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999693,
+      "time_ms": 5.1
+    },
+    {
+      "tensor_id": "model.layers.14.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999645,
+      "time_ms": 26.1
+    },
+    {
+      "tensor_id": "model.layers.14.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999637,
+      "time_ms": 21.9
+    },
+    {
+      "tensor_id": "model.layers.14.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999687,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.15.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999564,
+      "time_ms": 130.8
+    },
+    {
+      "tensor_id": "model.layers.15.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999583,
+      "time_ms": 134.4
+    },
+    {
+      "tensor_id": "model.layers.15.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999569,
+      "time_ms": 132.2
+    },
+    {
+      "tensor_id": "model.layers.15.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999684,
+      "time_ms": 4.7
+    },
+    {
+      "tensor_id": "model.layers.15.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999644,
+      "time_ms": 26.0
+    },
+    {
+      "tensor_id": "model.layers.15.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999634,
+      "time_ms": 22.9
+    },
+    {
+      "tensor_id": "model.layers.15.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999643,
+      "time_ms": 2.1
+    },
+    {
+      "tensor_id": "model.layers.16.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999566,
+      "time_ms": 128.6
+    },
+    {
+      "tensor_id": "model.layers.16.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999587,
+      "time_ms": 137.9
+    },
+    {
+      "tensor_id": "model.layers.16.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999572,
+      "time_ms": 133.9
+    },
+    {
+      "tensor_id": "model.layers.16.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999696,
+      "time_ms": 5.3
+    },
+    {
+      "tensor_id": "model.layers.16.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999653,
+      "time_ms": 27.2
+    },
+    {
+      "tensor_id": "model.layers.16.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999637,
+      "time_ms": 22.5
+    },
+    {
+      "tensor_id": "model.layers.16.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999698,
+      "time_ms": 2.7
+    },
+    {
+      "tensor_id": "model.layers.17.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999574,
+      "time_ms": 133.4
+    },
+    {
+      "tensor_id": "model.layers.17.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.99959,
+      "time_ms": 134.5
+    },
+    {
+      "tensor_id": "model.layers.17.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999575,
+      "time_ms": 142.0
+    },
+    {
+      "tensor_id": "model.layers.17.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999686,
+      "time_ms": 5.0
+    },
+    {
+      "tensor_id": "model.layers.17.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999649,
+      "time_ms": 28.2
+    },
+    {
+      "tensor_id": "model.layers.17.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999639,
+      "time_ms": 23.7
+    },
+    {
+      "tensor_id": "model.layers.17.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999677,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.18.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999578,
+      "time_ms": 130.6
+    },
+    {
+      "tensor_id": "model.layers.18.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999592,
+      "time_ms": 131.6
+    },
+    {
+      "tensor_id": "model.layers.18.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999582,
+      "time_ms": 137.3
+    },
+    {
+      "tensor_id": "model.layers.18.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999673,
+      "time_ms": 4.0
+    },
+    {
+      "tensor_id": "model.layers.18.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999648,
+      "time_ms": 27.9
+    },
+    {
+      "tensor_id": "model.layers.18.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999639,
+      "time_ms": 23.7
+    },
+    {
+      "tensor_id": "model.layers.18.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999604,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.19.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999582,
+      "time_ms": 130.0
+    },
+    {
+      "tensor_id": "model.layers.19.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999594,
+      "time_ms": 132.8
+    },
+    {
+      "tensor_id": "model.layers.19.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999584,
+      "time_ms": 136.8
+    },
+    {
+      "tensor_id": "model.layers.19.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999668,
+      "time_ms": 4.6
+    },
+    {
+      "tensor_id": "model.layers.19.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999643,
+      "time_ms": 25.7
+    },
+    {
+      "tensor_id": "model.layers.19.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999636,
+      "time_ms": 23.1
+    },
+    {
+      "tensor_id": "model.layers.19.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999658,
+      "time_ms": 2.1
+    },
+    {
+      "tensor_id": "model.layers.2.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999572,
+      "time_ms": 133.4
+    },
+    {
+      "tensor_id": "model.layers.2.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999575,
+      "time_ms": 138.7
+    },
+    {
+      "tensor_id": "model.layers.2.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999571,
+      "time_ms": 133.5
+    },
+    {
+      "tensor_id": "model.layers.2.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.99963,
+      "time_ms": 4.2
+    },
+    {
+      "tensor_id": "model.layers.2.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999638,
+      "time_ms": 28.0
+    },
+    {
+      "tensor_id": "model.layers.2.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999645,
+      "time_ms": 25.1
+    },
+    {
+      "tensor_id": "model.layers.2.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999699,
+      "time_ms": 2.0
+    },
+    {
+      "tensor_id": "model.layers.20.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999576,
+      "time_ms": 131.6
+    },
+    {
+      "tensor_id": "model.layers.20.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999587,
+      "time_ms": 134.6
+    },
+    {
+      "tensor_id": "model.layers.20.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999585,
+      "time_ms": 136.5
+    },
+    {
+      "tensor_id": "model.layers.20.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999664,
+      "time_ms": 5.0
+    },
+    {
+      "tensor_id": "model.layers.20.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999648,
+      "time_ms": 26.5
+    },
+    {
+      "tensor_id": "model.layers.20.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999633,
+      "time_ms": 24.3
+    },
+    {
+      "tensor_id": "model.layers.20.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999706,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.21.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999551,
+      "time_ms": 136.4
+    },
+    {
+      "tensor_id": "model.layers.21.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999589,
+      "time_ms": 135.5
+    },
+    {
+      "tensor_id": "model.layers.21.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999582,
+      "time_ms": 139.5
+    },
+    {
+      "tensor_id": "model.layers.21.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999671,
+      "time_ms": 4.2
+    },
+    {
+      "tensor_id": "model.layers.21.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999646,
+      "time_ms": 26.5
+    },
+    {
+      "tensor_id": "model.layers.21.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999621,
+      "time_ms": 22.8
+    },
+    {
+      "tensor_id": "model.layers.21.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999702,
+      "time_ms": 2.1
+    },
+    {
+      "tensor_id": "model.layers.3.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.99957,
+      "time_ms": 130.5
+    },
+    {
+      "tensor_id": "model.layers.3.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999583,
+      "time_ms": 132.0
+    },
+    {
+      "tensor_id": "model.layers.3.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999573,
+      "time_ms": 139.3
+    },
+    {
+      "tensor_id": "model.layers.3.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999685,
+      "time_ms": 4.3
+    },
+    {
+      "tensor_id": "model.layers.3.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999654,
+      "time_ms": 28.3
+    },
+    {
+      "tensor_id": "model.layers.3.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999638,
+      "time_ms": 23.1
+    },
+    {
+      "tensor_id": "model.layers.3.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999709,
+      "time_ms": 2.3
+    },
+    {
+      "tensor_id": "model.layers.4.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999571,
+      "time_ms": 131.1
+    },
+    {
+      "tensor_id": "model.layers.4.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999585,
+      "time_ms": 144.5
+    },
+    {
+      "tensor_id": "model.layers.4.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999577,
+      "time_ms": 135.6
+    },
+    {
+      "tensor_id": "model.layers.4.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999672,
+      "time_ms": 5.2
+    },
+    {
+      "tensor_id": "model.layers.4.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.99965,
+      "time_ms": 26.0
+    },
+    {
+      "tensor_id": "model.layers.4.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999639,
+      "time_ms": 22.4
+    },
+    {
+      "tensor_id": "model.layers.4.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999707,
+      "time_ms": 2.4
+    },
+    {
+      "tensor_id": "model.layers.5.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999568,
+      "time_ms": 134.7
+    },
+    {
+      "tensor_id": "model.layers.5.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999582,
+      "time_ms": 140.6
+    },
+    {
+      "tensor_id": "model.layers.5.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.99957,
+      "time_ms": 137.2
+    },
+    {
+      "tensor_id": "model.layers.5.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999691,
+      "time_ms": 4.3
+    },
+    {
+      "tensor_id": "model.layers.5.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999653,
+      "time_ms": 26.0
+    },
+    {
+      "tensor_id": "model.layers.5.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999646,
+      "time_ms": 23.4
+    },
+    {
+      "tensor_id": "model.layers.5.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999709,
+      "time_ms": 2.1
+    },
+    {
+      "tensor_id": "model.layers.6.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999563,
+      "time_ms": 130.9
+    },
+    {
+      "tensor_id": "model.layers.6.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999586,
+      "time_ms": 136.5
+    },
+    {
+      "tensor_id": "model.layers.6.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999563,
+      "time_ms": 135.3
+    },
+    {
+      "tensor_id": "model.layers.6.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999685,
+      "time_ms": 4.8
+    },
+    {
+      "tensor_id": "model.layers.6.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999645,
+      "time_ms": 28.0
+    },
+    {
+      "tensor_id": "model.layers.6.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999642,
+      "time_ms": 24.1
+    },
+    {
+      "tensor_id": "model.layers.6.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999699,
+      "time_ms": 2.1
+    },
+    {
+      "tensor_id": "model.layers.7.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999557,
+      "time_ms": 136.4
+    },
+    {
+      "tensor_id": "model.layers.7.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999585,
+      "time_ms": 135.9
+    },
+    {
+      "tensor_id": "model.layers.7.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999564,
+      "time_ms": 133.7
+    },
+    {
+      "tensor_id": "model.layers.7.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999699,
+      "time_ms": 5.0
+    },
+    {
+      "tensor_id": "model.layers.7.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999651,
+      "time_ms": 27.6
+    },
+    {
+      "tensor_id": "model.layers.7.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999645,
+      "time_ms": 23.0
+    },
+    {
+      "tensor_id": "model.layers.7.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999696,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.8.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999569,
+      "time_ms": 134.6
+    },
+    {
+      "tensor_id": "model.layers.8.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999586,
+      "time_ms": 132.1
+    },
+    {
+      "tensor_id": "model.layers.8.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999568,
+      "time_ms": 146.4
+    },
+    {
+      "tensor_id": "model.layers.8.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999672,
+      "time_ms": 4.6
+    },
+    {
+      "tensor_id": "model.layers.8.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999644,
+      "time_ms": 25.7
+    },
+    {
+      "tensor_id": "model.layers.8.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999642,
+      "time_ms": 24.2
+    },
+    {
+      "tensor_id": "model.layers.8.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999706,
+      "time_ms": 2.2
+    },
+    {
+      "tensor_id": "model.layers.9.mlp.down_proj.weight",
+      "shape": [
+        2048,
+        5632
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999568,
+      "time_ms": 132.0
+    },
+    {
+      "tensor_id": "model.layers.9.mlp.gate_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999586,
+      "time_ms": 136.6
+    },
+    {
+      "tensor_id": "model.layers.9.mlp.up_proj.weight",
+      "shape": [
+        5632,
+        2048
+      ],
+      "numel": 11534336,
+      "cos_sim": 0.999568,
+      "time_ms": 139.3
+    },
+    {
+      "tensor_id": "model.layers.9.self_attn.k_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.999702,
+      "time_ms": 4.8
+    },
+    {
+      "tensor_id": "model.layers.9.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999657,
+      "time_ms": 25.0
+    },
+    {
+      "tensor_id": "model.layers.9.self_attn.q_proj.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "numel": 4194304,
+      "cos_sim": 0.999647,
+      "time_ms": 22.0
+    },
+    {
+      "tensor_id": "model.layers.9.self_attn.v_proj.weight",
+      "shape": [
+        256,
+        2048
+      ],
+      "numel": 524288,
+      "cos_sim": 0.9997,
+      "time_ms": 2.1
+    }
+  ],
+  "cost": {
+    "wall_time_s": 17.684,
+    "cpu_time_s": 22.842,
+    "peak_memory_mb": 6677.8,
+    "python_version": "3.10.12",
+    "hostname": "Echo",
+    "timestamp_start": "2026-05-02T08:11:38",
+    "timestamp_end": "2026-05-02T08:11:56"
+  }
+}

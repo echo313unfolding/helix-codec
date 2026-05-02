@@ -1,0 +1,9264 @@
+{
+  "schema_version": "2.0",
+  "experiment": "hxq_non_llm_embedding_proof",
+  "asset_id": "sbert-all-mpnet-base-v2-embeddings-1024",
+  "asset_type": "embedding_batch",
+  "asset_source": "dataset:msmarco-v1.1-train-passages",
+  "codec": "hxq_affine_6",
+  "bpw": 6.25,
+  "method": "per-group affine, g=128, levels=64, 6-bit",
+  "group_size": 128,
+  "embedding_model": "all-mpnet-base-v2",
+  "embedding_dim": 768,
+  "n_embeddings": 1024,
+  "batch_tensor": {
+    "tensor_id": "batch_1024x768",
+    "shape": [
+      1024,
+      768
+    ],
+    "numel": 786432,
+    "n_groups": 6144,
+    "cos_sim": 0.999676,
+    "time_ms": 6.3,
+    "gate": "PASS"
+  },
+  "per_row_summary": {
+    "n_rows": 1024,
+    "cos_min": 0.999558,
+    "cos_mean": 0.999674,
+    "cos_p5": 0.999616,
+    "n_pass": 1024,
+    "n_fail": 0,
+    "gate": "PASS"
+  },
+  "gate": "PASS",
+  "gate_threshold": 0.999,
+  "per_tensor": [
+    {
+      "tensor_id": "embedding_0000",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.081
+    },
+    {
+      "tensor_id": "embedding_0001",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.054
+    },
+    {
+      "tensor_id": "embedding_0002",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0003",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.045
+    },
+    {
+      "tensor_id": "embedding_0004",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0005",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0006",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0007",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999716,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0008",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0009",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.05
+    },
+    {
+      "tensor_id": "embedding_0010",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0011",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99961,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0012",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0013",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999733,
+      "time_ms": 0.058
+    },
+    {
+      "tensor_id": "embedding_0014",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0015",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999726,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0016",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0017",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0018",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0019",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0020",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999717,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0021",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0022",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0023",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999638,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0024",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0025",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0026",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0027",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999601,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0028",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0029",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999723,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0030",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999628,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0031",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0032",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0033",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999706,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0034",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999652,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0035",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0036",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0037",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0038",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999632,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0039",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0040",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0041",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0042",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0043",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0044",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0045",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0046",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0047",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0048",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0049",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999696,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0050",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0051",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0052",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0053",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0054",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0055",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0056",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0057",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0058",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0059",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999611,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0060",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0061",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999615,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0062",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0063",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0064",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999628,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0065",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0066",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999634,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0067",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999623,
+      "time_ms": 0.065
+    },
+    {
+      "tensor_id": "embedding_0068",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999558,
+      "time_ms": 0.067
+    },
+    {
+      "tensor_id": "embedding_0069",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.068
+    },
+    {
+      "tensor_id": "embedding_0070",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999633,
+      "time_ms": 0.059
+    },
+    {
+      "tensor_id": "embedding_0071",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999621,
+      "time_ms": 0.057
+    },
+    {
+      "tensor_id": "embedding_0072",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.066
+    },
+    {
+      "tensor_id": "embedding_0073",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999638,
+      "time_ms": 0.053
+    },
+    {
+      "tensor_id": "embedding_0074",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.046
+    },
+    {
+      "tensor_id": "embedding_0075",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.045
+    },
+    {
+      "tensor_id": "embedding_0076",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999631,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0077",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0078",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0079",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0080",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0081",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999611,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0082",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0083",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0084",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0085",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0086",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0087",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0088",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0089",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.045
+    },
+    {
+      "tensor_id": "embedding_0090",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0091",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0092",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0093",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0094",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0095",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0096",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0097",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0098",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0099",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0100",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0101",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999731,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0102",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0103",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0104",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0105",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999645,
+      "time_ms": 0.048
+    },
+    {
+      "tensor_id": "embedding_0106",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0107",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0108",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0109",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0110",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999606,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0111",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0112",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999589,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0113",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0114",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0115",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0116",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0117",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999738,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0118",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999706,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0119",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0120",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999696,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0121",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0122",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.048
+    },
+    {
+      "tensor_id": "embedding_0123",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0124",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0125",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999751,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0126",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999629,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0127",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0128",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0129",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0130",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999618,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0131",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999632,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0132",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0133",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0134",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999602,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0135",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0136",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999577,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0137",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0138",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0139",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999592,
+      "time_ms": 0.05
+    },
+    {
+      "tensor_id": "embedding_0140",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999609,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0141",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0142",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0143",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0144",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0145",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0146",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0147",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0148",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0149",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0150",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0151",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0152",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999747,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0153",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999634,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0154",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999706,
+      "time_ms": 0.063
+    },
+    {
+      "tensor_id": "embedding_0155",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0156",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0157",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0158",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0159",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0160",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0161",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999618,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0162",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0163",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0164",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999615,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0165",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0166",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0167",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0168",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0169",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0170",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999724,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0171",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0172",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.049
+    },
+    {
+      "tensor_id": "embedding_0173",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0174",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0175",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0176",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.054
+    },
+    {
+      "tensor_id": "embedding_0177",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0178",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0179",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99972,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0180",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0181",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0182",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0183",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0184",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999655,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0185",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999633,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0186",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99958,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0187",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0188",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0189",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999581,
+      "time_ms": 0.048
+    },
+    {
+      "tensor_id": "embedding_0190",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0191",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999652,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0192",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0193",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0194",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0195",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0196",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0197",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999701,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0198",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0199",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0200",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0201",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0202",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0203",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0204",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0205",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999719,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0206",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999717,
+      "time_ms": 0.048
+    },
+    {
+      "tensor_id": "embedding_0207",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0208",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999629,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0209",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0210",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0211",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0212",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0213",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0214",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0215",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999613,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0216",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0217",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999605,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0218",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999625,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0219",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999615,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0220",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0221",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999615,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0222",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999607,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0223",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0224",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999581,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0225",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999628,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0226",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0227",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0228",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999622,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0229",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999623,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0230",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0231",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999637,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0232",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999632,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0233",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0234",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0235",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0236",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0237",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999618,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0238",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0239",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0240",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0241",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.045
+    },
+    {
+      "tensor_id": "embedding_0242",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999616,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0243",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0244",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0245",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0246",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0247",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0248",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0249",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999701,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0250",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0251",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0252",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999696,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0253",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999688,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0254",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0255",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0256",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0257",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0258",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.048
+    },
+    {
+      "tensor_id": "embedding_0259",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0260",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0261",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99972,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0262",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0263",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99975,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0264",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0265",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999701,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0266",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0267",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999622,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0268",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0269",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0270",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999625,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0271",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0272",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0273",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999619,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0274",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0275",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999599,
+      "time_ms": 0.048
+    },
+    {
+      "tensor_id": "embedding_0276",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0277",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999616,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0278",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999729,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0279",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0280",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0281",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0282",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0283",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0284",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0285",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0286",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999726,
+      "time_ms": 0.056
+    },
+    {
+      "tensor_id": "embedding_0287",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.05
+    },
+    {
+      "tensor_id": "embedding_0288",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0289",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0290",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0291",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0292",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0293",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0294",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0295",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0296",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0297",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0298",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0299",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0300",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999645,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0301",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0302",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0303",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999628,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0304",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999594,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0305",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0306",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0307",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0308",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0309",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0310",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999593,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0311",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0312",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0313",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0314",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0315",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0316",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999715,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0317",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0318",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0319",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0320",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999744,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0321",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0322",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0323",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0324",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999743,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0325",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0326",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999751,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0327",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999737,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0328",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999714,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0329",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99972,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0330",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999719,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0331",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0332",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9997,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0333",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999715,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0334",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0335",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0336",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0337",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0338",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999745,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0339",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0340",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0341",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999731,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0342",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999701,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0343",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999713,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0344",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.045
+    },
+    {
+      "tensor_id": "embedding_0345",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0346",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0347",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0348",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0349",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999621,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0350",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999591,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0351",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0352",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0353",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0354",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0355",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999696,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0356",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0357",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0358",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0359",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0360",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0361",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999738,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0362",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0363",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0364",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0365",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0366",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0367",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999739,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0368",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999584,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0369",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999607,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0370",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0371",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0372",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999607,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0373",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999629,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0374",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0375",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0376",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0377",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0378",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0379",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0380",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0381",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0382",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0383",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0384",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999716,
+      "time_ms": 0.046
+    },
+    {
+      "tensor_id": "embedding_0385",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999735,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0386",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999729,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0387",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0388",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0389",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999737,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0390",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0391",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0392",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999741,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0393",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0394",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99962,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0395",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0396",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0397",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0398",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0399",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0400",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0401",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0402",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0403",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0404",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0405",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0406",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0407",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999631,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0408",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999598,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0409",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0410",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0411",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999631,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0412",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0413",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0414",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0415",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0416",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0417",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0418",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0419",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0420",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99957,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0421",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999616,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0422",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0423",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0424",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0425",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0426",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0427",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9997,
+      "time_ms": 0.093
+    },
+    {
+      "tensor_id": "embedding_0428",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0429",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0430",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0431",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0432",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0433",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999618,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0434",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0435",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999645,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0436",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999738,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0437",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0438",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0439",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999715,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0440",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0441",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.057
+    },
+    {
+      "tensor_id": "embedding_0442",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0443",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0444",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0445",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0446",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0447",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0448",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999621,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0449",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0450",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0451",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0452",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0453",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0454",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0455",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0456",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0457",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0458",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0459",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0460",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0461",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0462",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999761,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0463",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999688,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0464",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999713,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0465",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0466",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0467",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0468",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0469",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999717,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0470",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0471",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0472",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0473",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0474",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0475",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0476",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0477",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0478",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0479",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0480",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999616,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0481",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999631,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0482",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99962,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0483",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0484",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999633,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0485",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0486",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0487",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0488",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0489",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0490",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999623,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0491",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0492",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0493",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999629,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0494",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0495",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999607,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0496",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0497",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0498",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0499",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0500",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0501",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0502",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0503",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.047
+    },
+    {
+      "tensor_id": "embedding_0504",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0505",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999719,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0506",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999634,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0507",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0508",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0509",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0510",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0511",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0512",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999606,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0513",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0514",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0515",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0516",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999655,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0517",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0518",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0519",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0520",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0521",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999633,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0522",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0523",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0524",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0525",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0526",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999652,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0527",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0528",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0529",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0530",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999651,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0531",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0532",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0533",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0534",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0535",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0536",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0537",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999643,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0538",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0539",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0540",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999587,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0541",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0542",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.05
+    },
+    {
+      "tensor_id": "embedding_0543",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0544",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999623,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0545",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999731,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0546",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999719,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0547",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999706,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0548",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0549",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9997,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0550",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0551",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999734,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0552",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0553",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999696,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0554",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0555",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0556",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0557",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0558",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0559",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0560",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999696,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0561",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0562",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0563",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999622,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0564",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0565",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999621,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0566",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0567",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999732,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0568",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0569",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0570",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0571",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0572",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0573",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0574",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0575",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0576",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0577",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0578",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0579",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0580",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0581",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999643,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0582",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0583",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999612,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0584",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999634,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0585",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0586",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0587",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999735,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0588",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0589",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999643,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0590",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0591",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0592",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0593",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0594",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0595",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999716,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0596",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0597",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999616,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0598",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999688,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0599",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0600",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0601",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0602",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0603",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0604",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999679,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0605",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999618,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0606",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0607",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999688,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0608",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0609",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0610",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0611",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.046
+    },
+    {
+      "tensor_id": "embedding_0612",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999643,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0613",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0614",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0615",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0616",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0617",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0618",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999633,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0619",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0620",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0621",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0622",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0623",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.053
+    },
+    {
+      "tensor_id": "embedding_0624",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0625",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0626",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999714,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0627",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999731,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0628",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.045
+    },
+    {
+      "tensor_id": "embedding_0629",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999717,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0630",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0631",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0632",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999736,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0633",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0634",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0635",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0636",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0637",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0638",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0639",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0640",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0641",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999716,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0642",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0643",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0644",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999626,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0645",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0646",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0647",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999623,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0648",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999718,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0649",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0650",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0651",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0652",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0653",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0654",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999622,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0655",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0656",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0657",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999638,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0658",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999717,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0659",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0660",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0661",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0662",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999727,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0663",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0664",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0665",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0666",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0667",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0668",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0669",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0670",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0671",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0672",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0673",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0674",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0675",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0676",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999626,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0677",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0678",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999575,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0679",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999615,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0680",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0681",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0682",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99962,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0683",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0684",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999626,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0685",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999626,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0686",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0687",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0688",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0689",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0690",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999742,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0691",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0692",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0693",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999716,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0694",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0695",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999637,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0696",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0697",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0698",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0699",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0700",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0701",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0702",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0703",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0704",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0705",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0706",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999641,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0707",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999628,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0708",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999728,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0709",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0710",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0711",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0712",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0713",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9997,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0714",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0715",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0716",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0717",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0718",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999714,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0719",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0720",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0721",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0722",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0723",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0724",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999645,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0725",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0726",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99966,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0727",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0728",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999632,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0729",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9997,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0730",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0731",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999624,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0732",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999728,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0733",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99962,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0734",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0735",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999629,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0736",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0737",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0738",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0739",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0740",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0741",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.055
+    },
+    {
+      "tensor_id": "embedding_0742",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0743",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0744",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0745",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0746",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0747",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0748",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0749",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0750",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0751",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0752",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0753",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0754",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0755",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0756",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0757",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99972,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0758",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0759",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0760",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999727,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0761",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0762",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0763",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0764",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999723,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0765",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0766",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999733,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0767",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999721,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0768",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0769",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0770",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0771",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99971,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0772",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999729,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0773",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0774",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0775",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0776",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0777",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.061
+    },
+    {
+      "tensor_id": "embedding_0778",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0779",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.05
+    },
+    {
+      "tensor_id": "embedding_0780",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0781",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0782",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0783",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999723,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0784",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999737,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0785",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0786",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0787",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999701,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0788",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0789",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999706,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0790",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0791",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0792",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0793",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999713,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0794",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0795",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0796",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0797",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0798",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0799",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0800",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0801",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0802",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0803",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999655,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0804",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0805",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0806",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0807",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0808",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0809",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999719,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0810",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0811",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0812",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0813",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0814",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0815",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999632,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0816",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0817",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0818",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0819",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0820",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0821",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999621,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0822",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999727,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0823",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99962,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0824",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0825",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0826",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999636,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0827",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.074
+    },
+    {
+      "tensor_id": "embedding_0828",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0829",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999652,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0830",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0831",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0832",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999566,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0833",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999624,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0834",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999609,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0835",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0836",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0837",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0838",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999579,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0839",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0840",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999682,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0841",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0842",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0843",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999729,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0844",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0845",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0846",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0847",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0848",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0849",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999667,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0850",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999642,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0851",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0852",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999614,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0853",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999647,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0854",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999602,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0855",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999639,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0856",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999673,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0857",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0858",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999637,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0859",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999632,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0860",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999605,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0861",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0862",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99963,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0863",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999643,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0864",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999605,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0865",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999656,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0866",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0867",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999623,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0868",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0869",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.043
+    },
+    {
+      "tensor_id": "embedding_0870",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999644,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0871",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0872",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999708,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0873",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0874",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0875",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0876",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0877",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0878",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0879",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9997,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0880",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0881",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999719,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0882",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999657,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0883",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999671,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0884",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0885",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0886",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0887",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999672,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0888",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999622,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0889",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_0890",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999668,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0891",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0892",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0893",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0894",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999758,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0895",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999731,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0896",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999706,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0897",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999738,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0898",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999728,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0899",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999691,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0900",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999675,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0901",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0902",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0903",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99969,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0904",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999603,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0905",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999715,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0906",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0907",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999725,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0908",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999714,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0909",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999688,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0910",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999727,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0911",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.9996,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0912",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0913",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999692,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0914",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0915",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999689,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0916",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999627,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0917",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0918",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0919",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99967,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0920",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999743,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0921",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.054
+    },
+    {
+      "tensor_id": "embedding_0922",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999723,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0923",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99964,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0924",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0925",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999687,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_0926",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999718,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0927",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0928",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999648,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0929",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0930",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999664,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0931",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999655,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0932",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0933",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0934",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0935",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0936",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999756,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0937",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0938",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999659,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0939",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0940",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999717,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0941",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0942",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99973,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0943",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99976,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0944",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999714,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_0945",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999728,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0946",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999727,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0947",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0948",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999752,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0949",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999654,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0950",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999709,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0951",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0952",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0953",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0954",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99965,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0955",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999693,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0956",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999676,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0957",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999616,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0958",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999653,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0959",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0960",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999702,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0961",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0962",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999646,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0963",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0964",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999718,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_0965",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999703,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0966",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_0967",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999683,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0968",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0969",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0970",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999681,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0971",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999666,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0972",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999578,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0973",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999638,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0974",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999625,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0975",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999715,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0976",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999694,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0977",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999637,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0978",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999701,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0979",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999626,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0980",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999649,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0981",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0982",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999665,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0983",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999586,
+      "time_ms": 0.042
+    },
+    {
+      "tensor_id": "embedding_0984",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0985",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999567,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0986",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0987",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0988",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999635,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0989",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999711,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0990",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999707,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0991",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999685,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0992",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999624,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0993",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999626,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_0994",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999684,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_0995",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999677,
+      "time_ms": 0.044
+    },
+    {
+      "tensor_id": "embedding_0996",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999698,
+      "time_ms": 0.061
+    },
+    {
+      "tensor_id": "embedding_0997",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999658,
+      "time_ms": 0.059
+    },
+    {
+      "tensor_id": "embedding_0998",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999662,
+      "time_ms": 0.059
+    },
+    {
+      "tensor_id": "embedding_0999",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999674,
+      "time_ms": 0.049
+    },
+    {
+      "tensor_id": "embedding_1000",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999697,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_1001",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999634,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_1002",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999704,
+      "time_ms": 0.057
+    },
+    {
+      "tensor_id": "embedding_1003",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.073
+    },
+    {
+      "tensor_id": "embedding_1004",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999722,
+      "time_ms": 0.057
+    },
+    {
+      "tensor_id": "embedding_1005",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999716,
+      "time_ms": 0.037
+    },
+    {
+      "tensor_id": "embedding_1006",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999686,
+      "time_ms": 0.054
+    },
+    {
+      "tensor_id": "embedding_1007",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999678,
+      "time_ms": 0.041
+    },
+    {
+      "tensor_id": "embedding_1008",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999663,
+      "time_ms": 0.049
+    },
+    {
+      "tensor_id": "embedding_1009",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999695,
+      "time_ms": 0.059
+    },
+    {
+      "tensor_id": "embedding_1010",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999669,
+      "time_ms": 0.055
+    },
+    {
+      "tensor_id": "embedding_1011",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999617,
+      "time_ms": 0.059
+    },
+    {
+      "tensor_id": "embedding_1012",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999655,
+      "time_ms": 0.057
+    },
+    {
+      "tensor_id": "embedding_1013",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999618,
+      "time_ms": 0.065
+    },
+    {
+      "tensor_id": "embedding_1014",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999661,
+      "time_ms": 0.038
+    },
+    {
+      "tensor_id": "embedding_1015",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999769,
+      "time_ms": 0.04
+    },
+    {
+      "tensor_id": "embedding_1016",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999705,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_1017",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999739,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_1018",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999723,
+      "time_ms": 0.036
+    },
+    {
+      "tensor_id": "embedding_1019",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999699,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_1020",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999712,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_1021",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999688,
+      "time_ms": 0.035
+    },
+    {
+      "tensor_id": "embedding_1022",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.999727,
+      "time_ms": 0.039
+    },
+    {
+      "tensor_id": "embedding_1023",
+      "shape": [
+        768
+      ],
+      "numel": 768,
+      "cos_sim": 0.99968,
+      "time_ms": 0.037
+    }
+  ],
+  "cost": {
+    "wall_time_s": 79.754,
+    "cpu_time_s": 533.29,
+    "peak_memory_mb": 2138.5,
+    "python_version": "3.10.12",
+    "hostname": "Echo",
+    "timestamp_start": "2026-05-02T08:23:24",
+    "timestamp_end": "2026-05-02T08:24:44"
+  }
+}
