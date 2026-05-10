@@ -17,8 +17,9 @@ Receipt: [`receipts/hxq_non_llm_embedding_proof.json`](receipts/hxq_non_llm_embe
 ## Downstream consumers
 
 - **[llama.cpp fork](https://github.com/echo313unfolding/llama.cpp)** — GGML_TYPE_HXQ_AFFINE_6
-  and GGML_TYPE_HXQ_AFFINE_G128 wired as native quantization types. LLM weight
-  compression, 27.83 tok/s GPU decode (Q8_0 parity).
+  and GGML_TYPE_HXQ_AFFINE_G128 wired as native quantization types. 226.53 tok/s
+  decode on RTX 3090 (92.4% of Q4_K_M), best PPL of all formats tested, works on
+  transformers and hybrid architectures with no calibration.
 - **[sentinel-hybrid-stack](https://github.com/echo313unfolding/sentinel-hybrid-stack)** —
   3-tier security triage agent deployed on edge hardware with HXQ-compressed models.
 - **Non-LLM tensor receipt** — 1024 MS MARCO sentence-transformer embeddings
