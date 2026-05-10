@@ -6,6 +6,18 @@ Every HXQ quantization operation produces a receipt: a JSON document proving
 what the codec did, to what data, with what fidelity, at what cost. Receipts
 are the contract between the codec and any downstream consumer.
 
+There are two receipt levels:
+
+1. **Per-tensor receipt** — produced by the C library (`hxq_receipt_to_json`).
+   One receipt per tensor, with cosine similarity, timing, and gate result.
+2. **Experiment-level aggregate** — produced by Python tooling
+   (`compress.py`, bench scripts). Aggregates per-tensor receipts into a
+   single document with `cos_min`/`cos_mean`, `n_pass`/`n_fail`, full
+   `per_tensor[]` array, and a `cost` block.
+
+Both levels share `schema_version`, `asset_id`, `asset_type`, `asset_source`,
+`codec`, `bpw`, and `gate_threshold`.
+
 ## Schema Version
 
 Every receipt MUST include `"schema_version": "2.0"`.
@@ -15,7 +27,31 @@ accept v1 receipts by translating: `model` -> `asset_id`,
 `model_hf_id` -> `asset_source` (prepend `huggingface:`),
 `name` (per-tensor) -> `tensor_id`.
 
-## Top-Level Fields
+## Per-Tensor Receipt (C library output)
+
+Produced by `hxq_receipt_to_json()`. One receipt per quantized tensor.
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `schema_version` | string | YES | `"2.0"` |
+| `asset_id` | string | YES | Human-readable name of the asset |
+| `asset_type` | string | YES | One of the defined asset types (see below) |
+| `asset_source` | string | YES | Source URI in `<scheme>:<identifier>` format |
+| `codec` | string | YES | Codec variant used (e.g. `"hxq_affine_6"`) |
+| `bpw` | float | YES | Bits per weight/element |
+| `group_size` | int | YES | Elements per quantization group |
+| `tensor_id` | string | YES | Unique identifier for the tensor |
+| `numel` | int | YES | Total number of elements |
+| `n_groups` | int | YES | Number of quantization groups |
+| `cos_sim` | float | YES | Cosine similarity (original vs reconstructed) |
+| `gate_threshold` | float | YES | Cosine similarity threshold used |
+| `gate` | string | YES | `"PASS"` or `"FAIL"` |
+| `time_ms` | float | YES | Quantize + dequantize + verify round-trip time in ms |
+
+## Experiment-Level Aggregate Receipt
+
+Produced by Python tooling. Aggregates all per-tensor results for a model
+or batch into a single document.
 
 | Field | Type | Required | Description |
 |---|---|---|---|
@@ -71,7 +107,7 @@ Format: `<scheme>:<identifier>`
 | `url` | `url:https://example.com/data.bin` |
 | `synthetic` | `synthetic:gaussian-768d-1024batch` |
 
-## Per-Tensor Entry
+## Per-Tensor Entry (inside aggregate `per_tensor` array)
 
 | Field | Type | Required | Description |
 |---|---|---|---|

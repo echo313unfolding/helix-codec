@@ -13,6 +13,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
+#include <time.h>
 
 /* ---------- fp16 helpers (from ggml, public domain) ---------- */
 
@@ -99,6 +100,7 @@ hxq_status hxq_quantize_g128(const float * in, size_t numel,
     hxq_status s = validate_input(in, numel, out);
     if (s != HXQ_OK) return s;
 
+    const clock_t t_start = clock();
     const size_t nb = numel / HXQ_GROUP_SIZE;
 
     for (size_t i = 0; i < nb; i++) {
@@ -138,6 +140,7 @@ hxq_status hxq_quantize_g128(const float * in, size_t numel,
             receipt_out->pass = (receipt_out->cos_sim >= receipt_out->gate_threshold) ? 1 : 0;
             free(tmp);
         }
+        receipt_out->time_ms = (double)(clock() - t_start) * 1000.0 / CLOCKS_PER_SEC;
     }
 
     return HXQ_OK;
@@ -166,6 +169,7 @@ hxq_status hxq_quantize_6bit(const float * in, size_t numel,
     hxq_status s = validate_input(in, numel, out);
     if (s != HXQ_OK) return s;
 
+    const clock_t t_start = clock();
     const size_t nb = numel / HXQ_GROUP_SIZE;
 
     for (size_t i = 0; i < nb; i++) {
@@ -212,6 +216,7 @@ hxq_status hxq_quantize_6bit(const float * in, size_t numel,
             receipt_out->pass = (receipt_out->cos_sim >= receipt_out->gate_threshold) ? 1 : 0;
             free(tmp);
         }
+        receipt_out->time_ms = (double)(clock() - t_start) * 1000.0 / CLOCKS_PER_SEC;
     }
 
     return HXQ_OK;
